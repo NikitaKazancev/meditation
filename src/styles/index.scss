@@ -36,6 +36,7 @@ a {
    display: block;
    color: #000;
    text-decoration: none;
+   transition: all 0.15s;
 }
 
 address {
@@ -44,4 +45,13 @@ address {
 
 .flex-reverse {
    flex-direction: row-reverse;
+}
+
+.shadow {
+   box-shadow: 20px -20px 1px rgba($main-color, $alpha: 0.2);
+   border-radius: 5px;
+
+   &_left {
+      box-shadow: -20px -20px 1px rgba($main-color, $alpha: 0.2);
+   }
 }

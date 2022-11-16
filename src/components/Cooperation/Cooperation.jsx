@@ -19,8 +19,8 @@ export const Cooperation = () => {
             }
          />
          <div className='cooperation__wrapper'>
-            {logos.map(({ img }) => (
-               <img src={img} alt='logo' />
+            {logos.map(({ img }, i) => (
+               <img src={img} alt='logo' key={i} />
             ))}
          </div>
       </section>

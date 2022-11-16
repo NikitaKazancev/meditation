@@ -1,8 +1,8 @@
 import './aboutPage.scss';
 
 import img from '../../img/about-image.png';
-import { AboutInfo } from '../../components/AboutInfo/AboutInfo';
 import { Cooperation } from '../../components/Cooperation/Cooperation';
+import { ImageBlock } from '../../components/ImageBlock/ImageBlock';
 
 export const AboutPage = () => {
    const contentInfo = [
@@ -51,7 +51,7 @@ export const AboutPage = () => {
       <>
          <section className='about-page__info container'>
             {contentInfo.map((info, i) => (
-               <AboutInfo {...info} key={i} reverse={i % 2} />
+               <ImageBlock {...info} key={i} reverse={i % 2} />
             ))}
          </section>
          <Cooperation />

@@ -6,6 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import { MainPage } from '../../pages/MainPage/MainPage';
 import { Page } from '../../pages/Page/Page';
 import { AboutPage } from '../../pages/AboutPage/AboutPage';
+import { ContactsPage } from '../../pages/ContactsPage/ContactsPage';
+import { NewsPage } from '../../pages/NewsPage/NewsPage';
 
 export const App = () => {
    return (
@@ -19,6 +21,18 @@ export const App = () => {
                      <Page ContentComponent={AboutPage} title={'О компании'} />
                   }
                   path='/about'
+               />
+               <Route
+                  element={
+                     <Page ContentComponent={ContactsPage} title={'Контакты'} />
+                  }
+                  path='/contacts'
+               />
+               <Route
+                  element={
+                     <Page ContentComponent={NewsPage} title={'Новости'} />
+                  }
+                  path='/news'
                />
             </Routes>
          </main>
