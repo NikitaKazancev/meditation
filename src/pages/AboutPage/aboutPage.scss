@@ -1,0 +1,8 @@
+.about-page {
+   width: 100vw;
+
+   &__info {
+      display: grid;
+      gap: 50px;
+   }
+}

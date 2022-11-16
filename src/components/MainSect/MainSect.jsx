@@ -4,7 +4,7 @@ import mainBg from '../../img/main-bg.jpg';
 
 export const MainSect = () => {
    return (
-      <div className='main-sect'>
+      <section className='main-sect'>
          <img src={mainBg} alt='meditation' className='main-sect__bg' />
          <div className='main-sect__wrapper'>
             <h1 className='main-sect__title'>
@@ -18,6 +18,6 @@ export const MainSect = () => {
             </h3>
             <button className='btn descr'>Каталог продукции</button>
          </div>
-      </div>
+      </section>
    );
 };

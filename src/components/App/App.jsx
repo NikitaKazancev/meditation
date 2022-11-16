@@ -1,22 +1,27 @@
 import './app.scss';
 
 import { Header } from '../Header/Header';
-import { MainSect } from '../MainSect/MainSect';
-import { Industries } from '../Industries/Industries';
-import { Products } from '../Products/Products';
-import { Benefits } from '../Benefits/Benefits';
-import { News } from '../News/News';
 import { Footer } from '../Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import { MainPage } from '../../pages/MainPage/MainPage';
+import { Page } from '../../pages/Page/Page';
+import { AboutPage } from '../../pages/AboutPage/AboutPage';
 
 export const App = () => {
    return (
       <div className='app'>
          <Header />
-         <MainSect />
-         <Industries />
-         <Products />
-         <Benefits />
-         <News />
+         <main>
+            <Routes>
+               <Route element={<MainPage />} path='/' />
+               <Route
+                  element={
+                     <Page ContentComponent={AboutPage} title={'О компании'} />
+                  }
+                  path='/about'
+               />
+            </Routes>
+         </main>
          <Footer />
       </div>
    );

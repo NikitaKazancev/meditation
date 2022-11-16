@@ -1,6 +1,7 @@
 import './header.scss';
 
 import logo from '../../img/logo.png';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
    return (
@@ -8,12 +9,22 @@ export const Header = () => {
          <img src={logo} alt='CARBONEX' className='header__logo' />
          <nav className='header__nav descr'>
             <ul>
-               <li>Главная</li>
-               <li>Области применения</li>
-               <li>Продукция</li>
-               <li>О компании</li>
-               <li>Новости</li>
-               <li>Контакты</li>
+               <li>
+                  <Link to='/'>Главная</Link>
+               </li>
+               <li>
+                  <Link to='/usage'>Области применения</Link>
+               </li>
+               {/* <li><Link to="/products">Продукция</Link></li> */}
+               <li>
+                  <Link to='/about'>О компании</Link>
+               </li>
+               <li>
+                  <Link to='/news'>Новости</Link>
+               </li>
+               <li>
+                  <Link to='/contacts'>Контакты</Link>
+               </li>
             </ul>
          </nav>
          <div className='header__src'>

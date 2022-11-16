@@ -2,6 +2,7 @@ import './benefits.scss';
 
 import benefitsBg from '../../img/benefits.png';
 import { Benefit } from './Benefit/Benefit';
+import { Title } from '../Title/Title';
 
 export const Benefits = () => {
    const benefits = [
@@ -11,8 +12,8 @@ export const Benefits = () => {
    ];
 
    return (
-      <div className='benefits'>
-         <h2 className='benefits__title title'>преимущества</h2>
+      <section className='benefits'>
+         <Title title={'преимущества'} />
          <div className='benefits__bg-wrapper'>
             <img src={benefitsBg} alt='benefits' />
             <div className='benefits__wrapper'>
@@ -26,6 +27,6 @@ export const Benefits = () => {
                ))}
             </div>
          </div>
-      </div>
+      </section>
    );
 };
