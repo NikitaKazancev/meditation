@@ -1,0 +1,13 @@
+.icon-info {
+   display: grid;
+   gap: 10px;
+   justify-items: center;
+
+   i {
+      font-size: 80px;
+   }
+
+   &__title {
+      text-transform: uppercase;
+   }
+}

@@ -1,0 +1,31 @@
+.benefits {
+   padding: 40px 0;
+
+   &__title {
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__bg-wrapper {
+      margin-top: 36px;
+      position: relative;
+
+      img {
+         z-index: -1;
+         position: relative;
+         left: 50%;
+         transform: translate3d(-50%, 0, 0);
+         width: 2560px;
+      }
+   }
+
+   &__wrapper {
+      position: absolute;
+      left: 10vw;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+   }
+}

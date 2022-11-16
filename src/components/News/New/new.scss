@@ -1,0 +1,26 @@
+.new {
+   img {
+      width: 100%;
+   }
+
+   &__title {
+      margin-top: 24px;
+      text-transform: uppercase;
+   }
+
+   &__descr {
+      margin-top: 10px;
+   }
+
+   .btn-to {
+      margin-top: 24px;
+
+      .btn {
+         border-radius: 5px 0 0 5px;
+      }
+
+      i {
+         border-radius: 0 5px 5px 0;
+      }
+   }
+}

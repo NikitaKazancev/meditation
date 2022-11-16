@@ -1,0 +1,28 @@
+.main-sect {
+   width: 100%;
+   position: relative;
+
+   &__bg {
+      z-index: -1;
+      position: relative;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+      width: 2560px;
+   }
+
+   &__wrapper {
+      left: 10vw;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+      display: inline-flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: flex-start;
+      position: absolute;
+   }
+
+   &__title {
+      font-size: 40px;
+   }
+}

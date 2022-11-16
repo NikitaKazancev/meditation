@@ -1,0 +1,25 @@
+.footer {
+   background-color: rgb(46, 46, 46);
+   padding: 26px 0;
+   width: 100%;
+
+   .container {
+      display: flex;
+      color: #fff;
+      justify-content: space-between;
+
+      address {
+         display: flex;
+
+         a {
+            color: #fff;
+            transition: all 0.15s;
+            margin-right: 32px;
+
+            &:hover {
+               opacity: 0.8;
+            }
+         }
+      }
+   }
+}

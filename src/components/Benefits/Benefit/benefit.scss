@@ -1,0 +1,21 @@
+.benefit {
+   color: #fff;
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+
+      i {
+         font-size: 32px;
+         margin-right: 10px;
+      }
+   }
+
+   &__title {
+      text-transform: uppercase;
+   }
+
+   &__descr {
+      margin-top: 10px;
+   }
+}

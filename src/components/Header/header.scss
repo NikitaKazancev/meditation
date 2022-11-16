@@ -1,0 +1,48 @@
+.header {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 24px 10vw;
+   z-index: 2;
+   background-color: rgba(255, 255, 255, 0.98);
+   box-shadow: 0 1px 10px #000;
+
+   &__logo {
+      height: 50px;
+   }
+
+   &__nav {
+      ul {
+         display: inline-flex;
+         gap: 24px;
+      }
+   }
+
+   &__src {
+      display: inline-flex;
+      gap: 50px;
+   }
+
+   &__phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      i {
+         margin-right: 12px;
+      }
+
+      &_dashed {
+         color: rgba(88, 88, 88, 0.719);
+         border-bottom: 1px dashed rgba(88, 88, 88, 0.719);
+         transition: all 0.15s;
+
+         &:hover {
+            color: rgba(88, 88, 88, 1);
+            border-bottom-color: rgba(88, 88, 88, 1);
+         }
+      }
+   }
+}

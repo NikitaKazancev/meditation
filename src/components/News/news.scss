@@ -1,0 +1,16 @@
+.news {
+   padding: 40px 0;
+
+   &__title {
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__wrapper {
+      margin-top: 36px;
+      padding: 0 10vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+   }
+}
