@@ -1,9 +1,9 @@
 import './productsPage.scss';
 
-import { products } from '../../components/Products/Products';
 import { Product } from '../../components/Products/Product/Product';
 import { useEffect, useState } from 'react';
 import { ProductInfo } from '../../components/ProductInfo/ProductInfo';
+import { products } from '../../general/data';
 
 export const ProductsPage = ({ index, setProductIndex }) => {
    const [activeProduct, setActiveProduct] = useState(products[0]);

@@ -3,6 +3,14 @@ import './mainSect.scss';
 import mainBg from '../../img/main-bg.jpg';
 
 export const MainSect = () => {
+   const scrollTo = id => {
+      const elem = document.getElementById(id);
+
+      if (elem) {
+         elem.scrollIntoView({ behavior: 'smooth' });
+      }
+   };
+
    return (
       <section className='main-sect'>
          <img src={mainBg} alt='meditation' className='main-sect__bg' />
@@ -16,7 +24,9 @@ export const MainSect = () => {
                отраслях <br /> промышленности и затрагивают каждый аспект
                современной жизни.
             </h3>
-            <button className='btn descr'>Каталог продукции</button>
+            <button className='btn descr' onClick={() => scrollTo('products')}>
+               Каталог продукции
+            </button>
          </div>
       </section>
    );

@@ -1,8 +1,12 @@
 import './imageBlock.scss';
 
-export const ImageBlock = ({ reverse, img, descr, title, left }) => {
+export const ImageBlock = ({ reverse, img, descr, title, left, className }) => {
    return (
-      <article className={`image-block${reverse ? ' flex-reverse' : ''}`}>
+      <article
+         className={`image-block${reverse ? ' flex-reverse' : ''}${
+            className ? ` ${className}` : ''
+         }`}
+      >
          <div className='image-block__bg-wrapper'>
             <img
                src={img}
