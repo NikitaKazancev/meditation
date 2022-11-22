@@ -8,7 +8,7 @@ export const ContactsPage = () => {
                <h3 className='small-title'>Контактная информация</h3>
                <address className='descr'>
                   <p>Адрес:</p>
-                  <p>г. Санкт-Петербург, ул. Глиняная, 21</p>
+                  <p>г. Москва, ул. 3я Парковая, д. 33</p>
                   <p>Телефон:</p>
                   <div className='contacts__phones'>
                      <p>Отдел заказов:</p>

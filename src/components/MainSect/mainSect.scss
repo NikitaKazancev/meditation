@@ -47,14 +47,6 @@
    }
 }
 
-@media screen and (max-width: 600px) {
-   .main-sect {
-      &__descr {
-         width: 400px;
-      }
-   }
-}
-
 @media screen and (max-width: 500px) {
    .main-sect {
       &__wrapper {
