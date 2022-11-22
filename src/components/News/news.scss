@@ -9,3 +9,33 @@
       gap: 32px;
    }
 }
+
+@media screen and (max-width: 1400px) {
+   .news {
+      &__wrapper {
+         padding: 0 7vw;
+      }
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .news {
+      padding: 20px 0;
+
+      &__wrapper {
+         margin-top: 20px;
+         padding: 0 5vw;
+         grid-template-columns: 1fr 1fr;
+         gap: 40px;
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .news {
+      &__wrapper {
+         padding: 0 3vw;
+         grid-template-columns: 1fr;
+      }
+   }
+}

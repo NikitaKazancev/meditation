@@ -1,6 +1,6 @@
-@import './fonts.scss';
 @import './btn.scss';
 @import './text.scss';
+@import './fonts.scss';
 
 * {
    margin: 0;
@@ -48,10 +48,22 @@ address {
 }
 
 .shadow {
-   box-shadow: 20px -20px 1px rgba($main-color, $alpha: 0.2);
+   box-shadow: 20px -20px 1px rgba($main-color, $alpha: 0.8);
    border-radius: 5px;
 
    &_left {
-      box-shadow: -20px -20px 1px rgba($main-color, $alpha: 0.2);
+      box-shadow: -20px -20px 1px rgba($main-color, $alpha: 0.8);
    }
+}
+
+.no-scroll {
+   overflow: hidden;
+}
+
+.fa-check {
+   color: rgb(94, 174, 136);
+}
+
+.fa-xmark {
+   color: rgb(199, 22, 57);
 }

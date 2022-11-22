@@ -8,7 +8,7 @@ export const New = ({ img, title, descr }) => {
          <img src={img} alt={title} />
          <h3 className='new__title small-title'>{title}</h3>
          <p className='new__descr descr'>{descr}</p>
-         <BtnTo text={'Подробнее'} />
+         {/* <BtnTo text={'Подробнее'} /> */}
       </div>
    );
 };

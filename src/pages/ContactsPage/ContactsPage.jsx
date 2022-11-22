@@ -34,7 +34,7 @@ export const ContactsPage = () => {
             </div>
          </div>
          <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.135527828303!2d30.3795433162217!3d59.91329807110454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631cdccf67027%3A0xcad7354d79acbd94!2sGlinyanaya%20Ulitsa%2C%2021%2C%20Sankt-Peterburg%2C%20192019!5e0!3m2!1sen!2sru!4v1668628324656!5m2!1sen!2sru'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.867710671128!2d37.779983951636616!3d55.79553498046943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b534d099758f6b%3A0xa8913a9116e1b848!2s3Ya%20Parkovaya%20Ulitsa%2C%2033%2C%20Moskva%2C%20105037!5e0!3m2!1sen!2sru!4v1668852034344!5m2!1sen!2sru'
             title='Google Map'
             // width='600'
             // height='450'

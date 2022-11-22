@@ -26,3 +26,44 @@
       font-size: 40px;
    }
 }
+
+@media screen and (max-width: 850px) {
+   .main-sect {
+      &__wrapper {
+         left: 5vw;
+         width: 90vw;
+         align-items: center;
+         text-align: center;
+      }
+
+      &__bg {
+         transform: translate3d(-50%, 10px, 0);
+         width: 2000px;
+      }
+
+      &__title {
+         font-size: 30px;
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .main-sect {
+      &__descr {
+         width: 400px;
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .main-sect {
+      &__wrapper {
+         left: 3vw;
+         width: 94vw;
+      }
+
+      &__title {
+         font-size: 26px;
+      }
+   }
+}

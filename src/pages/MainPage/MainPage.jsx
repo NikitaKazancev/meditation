@@ -6,12 +6,12 @@ import { Products } from '../../components/Products/Products';
 import { Benefits } from '../../components/Benefits/Benefits';
 import { News } from '../../components/News/News';
 
-export const MainPage = () => {
+export const MainPage = ({ setProductIndex }) => {
    return (
       <div className='main-page'>
          <MainSect />
          <Industries />
-         <Products />
+         <Products setProductIndex={setProductIndex} />
          <Benefits />
          <News />
       </div>

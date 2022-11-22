@@ -13,9 +13,7 @@ export const Page = ({ title, ContentComponent }) => {
             <li>{title}</li>
          </ul>
          <h2 className='page__title title'>{title}</h2>
-         <div className='page__content'>
-            <ContentComponent />
-         </div>
+         <div className='page__content'>{ContentComponent}</div>
       </div>
    );
 };

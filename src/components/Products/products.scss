@@ -10,3 +10,29 @@
       justify-items: center;
    }
 }
+
+@media screen and (max-width: 1100px) {
+   .products {
+      &__wrapper {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .products {
+      padding: 20px 0;
+
+      &__wrapper {
+         margin-top: 20px;
+      }
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .products {
+      &__wrapper {
+         gap: 20px;
+      }
+   }
+}

@@ -3,15 +3,25 @@
    text-align: center;
    margin-top: 40px;
 
-   // .descr {
-   //    margin-top: 10px;
-   // }
-
    &__wrapper {
       margin-top: 36px;
       display: grid;
       gap: 32px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       justify-items: center;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .industries {
+      &__wrapper {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .industries {
+      padding: 20px 0;
    }
 }

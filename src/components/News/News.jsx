@@ -1,27 +1,17 @@
 import './news.scss';
 
 import { New } from './New/New';
-import img from '../../img/product.png';
 import { Title } from '../Title/Title';
+import { news } from '../../pages/NewsPage/NewsPage';
+import { transformString } from '../../general/functions';
 
 export const News = () => {
-   const news = [
-      { title: 'жизнь - это химия' },
-      { title: 'жизнь - это химия' },
-      { title: 'Ао “СОрбент” ПОСЕТИЛ ГУБЕРНАТОР' },
-   ];
-
    return (
       <section className='news'>
-         <Title title={'новости'} />
+         <Title title={'последние новости'} />
          <div className='news__wrapper'>
-            {news.map((n, i) => (
-               <New
-                  {...n}
-                  img={img}
-                  descr='CARBONEX - является лидером в области фитрованных материалов. Наши передовые материалы '
-                  key={i}
-               />
+            {news.slice(0, 3).map((n, i) => (
+               <New {...n} descr={transformString(n.descr, 100)} key={i} />
             ))}
          </div>
       </section>

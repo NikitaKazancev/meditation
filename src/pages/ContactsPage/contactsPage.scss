@@ -31,7 +31,7 @@
       gap: 10px;
 
       p {
-         color: $main-color;
+         color: scale-color($color: $main-color, $lightness: -30%);
       }
 
       a {
@@ -46,6 +46,79 @@
    .google-map {
       border: none;
       width: 700px;
-      height: 500px;
+      aspect-ratio: 7 / 5;
+   }
+}
+
+@media screen and (max-width: 1500px) {
+   .contacts {
+      &__wrapper {
+         margin-right: 100px;
+      }
+
+      .google-map {
+         width: 500px;
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .contacts {
+      padding-bottom: 40px;
+      flex-direction: column;
+      margin-top: 0;
+
+      &__wrapper {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         margin-right: 0;
+         width: 100%;
+      }
+
+      &__info {
+         margin-top: 0;
+      }
+
+      .google-map {
+         margin-top: 40px;
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .contacts {
+      &__wrapper {
+         grid-template-columns: 1fr;
+         justify-items: center;
+      }
+
+      &__info {
+         width: 400px;
+
+         &:not(:first-child) {
+            margin-top: 32px;
+         }
+
+         h3 {
+            margin-bottom: 10px;
+         }
+      }
+
+      .google-map {
+         width: 400px;
+      }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .contacts {
+      &__info {
+         width: 300px;
+      }
+
+      .google-map {
+         box-shadow: none;
+         width: 300px;
+      }
    }
 }
