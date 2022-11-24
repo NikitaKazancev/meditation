@@ -71,8 +71,16 @@ address {
    visibility: hidden;
 }
 
-.animate__animated.animate__fadeInLeft .animate__animated.animate__fadeInRight {
-   --animate-duration: 1s;
+.animate__animated {
+   animation-duration: 1s;
+}
+
+.animate__fadeInLeft {
+   animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+   animation-name: fadeInRight;
 }
 
 @keyframes fadeInLeft {

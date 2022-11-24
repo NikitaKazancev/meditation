@@ -26,7 +26,7 @@ export const Industries = () => {
          />
          <div className='industries__wrapper'>
             {industries.map((ind, i) => (
-               <IconInfo {...ind} key={i} />
+               <IconInfo name={ind.name} img={ind.img} key={i} />
             ))}
          </div>
       </section>

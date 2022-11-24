@@ -1,18 +1,10 @@
 import './productsPage.scss';
 
 import { Product } from '../../components/Products/Product/Product';
-import { useEffect, useState } from 'react';
 import { ProductInfo } from '../../components/ProductInfo/ProductInfo';
 import { products } from '../../general/data';
 
 export const ProductsPage = ({ index, setProductIndex }) => {
-   const [activeProduct, setActiveProduct] = useState(products[0]);
-
-   useEffect(() => {
-      setActiveProduct(products[index]);
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-   }, [index]);
-
    return (
       <div className='products-page container'>
          <section className='products-page__products'>
@@ -25,7 +17,7 @@ export const ProductsPage = ({ index, setProductIndex }) => {
                />
             ))}
          </section>
-         <ProductInfo {...activeProduct} />
+         <ProductInfo {...products[index]} />
       </div>
    );
 };

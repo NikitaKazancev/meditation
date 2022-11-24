@@ -7,33 +7,27 @@ import img from '../../img/benefit-image.jpg';
 
 const usageElems = [
    {
-      name: 'Заголовок',
-      descr: 'Медитации помогают справиться с беспокойством и тревогой',
+      name: 'Медитации помогают справиться с беспокойством и тревогой',
       iconClass: 'fa-regular fa-face-surprise',
    },
    {
-      name: 'Заголовок',
-      descr: 'Занятия йогой улучшают ментальное здоровье',
+      name: 'Занятия йогой улучшают ментальное здоровье',
       iconClass: 'fa-solid fa-hand-holding-medical',
    },
    {
-      name: 'Заголовок',
-      descr: 'Увеличивается выносливость',
+      name: 'Увеличивается выносливость',
       iconClass: 'fa-solid fa-person-running',
    },
    {
-      name: 'Заголовок',
-      descr: 'Повышается мышечный тонус',
+      name: 'Повышается мышечный тонус',
       iconClass: 'fa-solid fa-dumbbell',
    },
    {
-      name: 'Заголовок',
-      descr: 'Улучшается работа с дыханием',
+      name: 'Улучшается работа с дыханием',
       iconClass: 'fa-solid fa-lungs',
    },
    {
-      name: 'Заголовок',
-      descr: 'Уменьшаются боли во всём теле',
+      name: 'Уменьшаются боли во всём теле',
       iconClass: 'fa-solid fa-child-reaching',
    },
 ];
